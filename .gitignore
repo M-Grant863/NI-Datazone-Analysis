@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.env
+.venv/
+
+# OS files
+.DS_Store
+
+# GIS files (important!)
+*.tif
+*.tiff
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+*.gpkg
+
+# Outputs
+outputs/
