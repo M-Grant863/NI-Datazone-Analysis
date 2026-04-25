@@ -1,8 +1,10 @@
-name: raster-workflow
+name: census-workflow
+
 channels:
   - conda-forge
+
 dependencies:
   - python=3.11
-  - rasterio
+  - pandas
   - numpy
   - matplotlib
