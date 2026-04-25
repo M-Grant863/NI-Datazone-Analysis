@@ -9,3 +9,4 @@ dependencies:
   - geopandas
   - matplotlib
   - mapclassify
+  - matplotlib-scalebar
