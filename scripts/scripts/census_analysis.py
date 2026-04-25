@@ -34,7 +34,7 @@ gdf.plot(
     legend=True,
     legend_kwds={
         "title": "Unemployment (%)",
-        "loc": "lower left",
+        "loc": "upper left",
         "frameon": True
     },
     cmap="OrRd",
@@ -48,7 +48,7 @@ ax.set_title("Unemployment Rate by Data Zone", fontsize=14)
 
 # Grid lines
 ax.set_axis_on()
-ax.grid(True, color="grey", linestyle="--", linewidth=0.3, alpha=0.5)
+ax.grid(True, color="black", linestyle="--", linewidth=0.3, alpha=0.5)
 
 # Scale bar
 scalebar = ScaleBar(
