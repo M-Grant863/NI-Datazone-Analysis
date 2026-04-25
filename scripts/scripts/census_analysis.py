@@ -25,7 +25,7 @@ census["unemployment_rate"] = (
 gdf = boundaries.merge(
     census,
     left_on="DZ2021_cd",  
-    right_on="DZ2021_cd"
+    right_on="DZ_2021_code"
 )
 
 
