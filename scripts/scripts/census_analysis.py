@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 boundaries = gpd.read_file("data/DZ2021.shp")
 
 # Load census data
-census = pd.read_csv("data/Census data.csv")
+census = pd.read_csv("data/Census_data.csv")
 
 
 # Check columns (important)
