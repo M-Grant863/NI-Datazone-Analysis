@@ -2,8 +2,11 @@
 
 ## Overview
 
-This repository contains a Python workflow for analysing census data and calculating unemployment rates at ward level. The script demonstrates basic data processing and statistical analysis techniques inspired by course practical exercises. This approach reflects common workflows in GIS and spatial data analysis, where tabular data is processed and analysed to derive meaningful indicators.
+This repository contains a Python-based GIS workflow for analysing census data and visualising spatial patterns across Northern Ireland Data Zones. The script integrates tabular census data with spatial boundary data, calculates key socio-economic indicators such as unemployment rates and long-term health conditions, and produces a series of choropleth maps.
 
+In addition, the workflow includes a spatial accessibility analysis, calculating the distance from each Data Zone to the nearest emergency department using geometric centroids and Euclidean distance. The results are visualised through multiple maps, enhanced with cartographic elements including legends, scale bars, north arrows, and gridlines.
+
+The project demonstrates key GIS and spatial data analysis techniques, including data integration, indicator calculation, spatial analysis, and thematic mapping, implemented within a reproducible Python workflow using libraries such as GeoPandas and Matplotlib.
 ## Installation
 
 Create the environment using:
@@ -34,6 +37,10 @@ Run the script using:
 python scripts/census_analysis.py
 ```
 ## Output
-The script will calculate unemployment rates for each ward and print summary statistics (mean, minimum, and maximum) to the console.
+The script calculates key socio-economic indicators, including unemployment rates and long-term health conditions, for each Data Zone. Summary statistics are printed to the console for each variable, including measures such as the mean, minimum, maximum, and quartiles.
+
+In addition, the script calculates the distance from each Data Zone to the nearest emergency department, expressed in kilometres, and outputs descriptive statistics for this accessibility measure.
+
+The workflow also generates a series of choropleth maps visualising each variable. These include maps of unemployment rates, long-term health conditions, and distance to emergency departments. The maps are saved as high-quality image files in the outputs/ directory for interpretation and reporting.
 
 
