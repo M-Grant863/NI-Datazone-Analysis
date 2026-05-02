@@ -20,22 +20,26 @@ conda activate census-workflow
 - numpy
 - matplotlib
   
-## Data
+Data
 
-A sample dataset is included for demonstration purposes.
+A sample dataset is included for demonstration purposes. The workflow is based on census-style data containing socio-economic variables, including employment, unemployment, and health indicators, at the Data Zone level.
 
-The workflow is based on census-style data containing employment and unemployment figures at ward level.
+In addition to the census data, spatial boundary data for Northern Ireland Data Zones and point data representing emergency department locations are required. These datasets are used to perform spatial analysis and generate thematic maps.
 
 Users can replace the sample data with real datasets from sources such as:
-- NISRA
-- ONS
-Place the dataset in the `data/` folder before running the script.
 
-## Usage
-Run the script using:
-```bash
+NISRA (Northern Ireland Statistics and Research Agency)
+ONS (Office for National Statistics)
+
+All datasets should be placed in the data/ directory before running the script.
+Usage
+
+To run the workflow, navigate to the project directory and execute:
+
 python scripts/census_analysis.py
-```
+
+This will run the full analysis, generate summary statistics, and produce map outputs saved in the outputs/ directory.
+
 ## Output
 The script calculates key socio-economic indicators, including unemployment rates and long-term health conditions, for each Data Zone. Summary statistics are printed to the console for each variable, including measures such as the mean, minimum, maximum, and quartiles.
 
